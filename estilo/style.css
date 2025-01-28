@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/*Versão Mobile*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1 : #8e9798;
+    --cor2 : #f4a48c;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2)); 
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.461);
+}
+
+div.cadastro {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+div.cadastro > h1 {
+    color: rgb(69, 69, 69);
+    margin-bottom: 25px;
+    margin-top: 3px
+}
+
+div.cadastro > form > p > input {
+    padding: 5px;
+    margin-bottom: 7px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-image: linear-gradient(to right, rgba(227, 227, 227, 0.524), rgb(183, 183, 183));
+}
+
+div.cadastro > form > input {
+    margin-top: 10px;
+    align-self: center;
+    padding: 10px;
+    width: 125px;
+
+    background-color: #cc8975;
+    color: white;
+
+    border: none;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+div.cadastro > form > input:hover {
+    cursor: pointer;
+    background-color: #b07664;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+div.cadastro > form > p  {
+    font-weight: 500;
+    color:  rgb(69, 69, 69);
+    align-self: center;
+}
+
+form > a {
+    align-self: center;
+    text-decoration: none;
+    color:  rgb(69, 69, 69);
+
+    margin-bottom: 8px;
+}
+
+form > a:hover {
+    text-decoration: underline;
+    color:  rgb(39, 39, 39);
+    font-weight: 500;
+}
+
+main > div#imagem {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+
+    background: white url(../imagem/fundo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 262px;
+
+    color: rgba(255, 255, 255, 0.619);
+
+    border-radius: 0px 0px 20px 20px;
+
+    padding: 15px;
+
+    transition-duration: 0.8s;
+}
+
+main > div#imagem > h1 {
+    font-size: 1.8em;
+    margin-top: -25px;
+}
+
+main > div#imagem > p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+main > div#imagem > input {
+    margin-top: 30px;
+    padding: 8px;
+    width: 125px;
+
+    color: white;
+    background-color: #276783;
+
+    border-radius: 15px;
+    border: none;
+
+    transition: 0.3s;
+}
+
+main > div#imagem > input:hover {
+    cursor: pointer;
+    background-color: #1d4d61;
+}

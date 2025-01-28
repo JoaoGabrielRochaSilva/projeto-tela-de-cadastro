@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <div id="imagem">
+            <h1 class="texto">Já tem uma conta?</h1>
+            <p class="texto">
+                Clique no botão abaixo para fazer login
+            </p>
+            <input type="button" value="Ir" class="botao" onclick="clicou()">
+        </div>
+        <div class="cadastro">
+                <h1>Registrar-se.</h1>
+                <form action="" method="get">
+                    <p>
+                        <label for="nomeusuario"></label>
+                        <input type="text" name="usuario" id="nomeusuario" placeholder="Nome">
+                    </p>
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </p>
+                    <p>
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    </p>
+                    <input type="button" value="Registrar">
+                </form>
+            </div>
+        </div>
+        <div class="cadastro">
+                <h1>Login.</h1>
+                <form action="" method="get">
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </p>
+                    <p>
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <label for="lembrar">Lembrar de mim</label>
+                    </p>
+                    <a href="#">esqueceu a senha?</a>
+                    <input type="button" value="Login">
+                </form>
+        </div>
+    </main>
+
+    <script src="interação/script.js"></script>
+</body>
+</html>
