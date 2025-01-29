@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css" media="screen and (min-width: 501px)">
 </head>
 <body>
     <main>
         <div id="imagem">
             <h1 class="texto">Já tem uma conta?</h1>
             <p class="texto">
-                Clique no botão abaixo para fazer login
+                Clique no botão abaixo para fazer login.
             </p>
-            <input type="button" value="Ir" class="botao" onclick="clicou()">
+            <input type="button" value="Ir" class="botao" onclick="ir()">
         </div>
         <div class="cadastro">
                 <h1>Registrar-se.</h1>
@@ -30,7 +31,7 @@
                         <label for="senha"></label>
                         <input type="password" name="senha" id="senha" placeholder="Senha">
                     </p>
-                    <input type="button" value="Registrar">
+                    <input type="button" value="Registrar" onclick="Registrar()">
                 </form>
             </div>
         </div>
@@ -39,18 +40,18 @@
                 <form action="" method="get">
                     <p>
                         <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="emaillogin" placeholder="Email">
                     </p>
                     <p>
                         <label for="senha"></label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="password" name="senha" id="senhalogin" placeholder="Senha">
                     </p>
                     <p>
                         <input type="checkbox" name="lembrar" id="lembrar">
                         <label for="lembrar">Lembrar de mim</label>
                     </p>
                     <a href="#">esqueceu a senha?</a>
-                    <input type="button" value="Login">
+                    <input type="button" value="Login" onclick="login()">
                 </form>
         </div>
     </main>

@@ -9,8 +9,8 @@
 }
 
 :root {
-    --cor1 : #8e9798;
-    --cor2 : #f4a48c;
+    --cor1 : #123f5799;
+    --cor2 : #f4a48c7b;
 }
 
 body {
@@ -49,8 +49,8 @@ div.cadastro {
 
 div.cadastro > h1 {
     color: rgb(69, 69, 69);
-    margin-bottom: 25px;
-    margin-top: 3px
+    margin-bottom: 20px;
+    margin-top: 8px
 }
 
 div.cadastro > form > p > input {
@@ -81,6 +81,7 @@ div.cadastro > form > input {
 div.cadastro > form > input:hover {
     cursor: pointer;
     background-color: #b07664;
+    width: 135px;
 }
 
 form {
@@ -116,13 +117,15 @@ main > div#imagem {
     position: absolute;
     top: 50%;
 
-    background: white url(../imagem/fundo.jpg) no-repeat center center;
+    background: white url(../imagem/fundo.jpg) no-repeat left center;
     background-size: cover;
     height: 262px;
 
-    color: rgba(255, 255, 255, 0.619);
+    color: rgba(255, 255, 255, 0.506);
 
     border-radius: 0px 0px 20px 20px;
+
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
 
     padding: 15px;
 
@@ -132,11 +135,13 @@ main > div#imagem {
 main > div#imagem > h1 {
     font-size: 1.8em;
     margin-top: -25px;
+    transition-duration: 0.8s;
 }
 
 main > div#imagem > p {
     margin-top: 10px;
     font-size: 1.1em;
+    transition-duration: 0.8s;
 }
 
 main > div#imagem > input {
@@ -156,4 +161,5 @@ main > div#imagem > input {
 main > div#imagem > input:hover {
     cursor: pointer;
     background-color: #1d4d61;
+    width: 135px;
 }
