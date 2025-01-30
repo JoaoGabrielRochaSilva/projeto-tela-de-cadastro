@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    max-width: 690px;
+    width: 85vw;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+div.cadastro {
+    width: 50%;
+}
+
+div#imagem {
+    transform: translate(50%, -50%);
+
+    height: 262px;
+    width: 50%;
+
+    border-radius: 0px 20px 20px 0px;
+    
+
+}

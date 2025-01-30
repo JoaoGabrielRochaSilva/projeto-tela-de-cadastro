@@ -1,27 +1,52 @@
 //Animação da imagem
 function ir() {
     let fundo = document.getElementById('imagem')
+    let tela = document.getElementsByTagName('body')[0]
     let h1 = document.getElementsByClassName('texto')[0]
     let p = document.getElementsByClassName('texto')[1]
 
-    if (h1.innerHTML == ('Já tem uma conta?') && fundo.style.maxWidth <= '300px') {
+    if (window.matchMedia('(min-width: 320px)').matches && window.matchMedia('(max-width: 509px)').matches) {
 
-        fundo.style.transform = 'translate(0%, -101%)'
-        fundo.style.borderRadius = '20px 20px 0px 0px'
-        fundo.style.backgroundPosition = 'right center'
+        if (h1.innerHTML == ('Já tem uma conta?')) {
 
-        h1.innerHTML = ('Não possui uma conta?')
-        p.innerHTML = ('Clique no botão abaixo para fazer o registro.')
+            fundo.style.transform = 'translate(0%, -101%)'
+            fundo.style.borderRadius = '20px 20px 0px 0px'
+            fundo.style.backgroundPosition = 'right center'
 
-    } else if (h1.innerHTML == ('Não possui uma conta?') && fundo.style.maxWidth <= '300px') {
+            h1.innerHTML = ('Não possui uma conta?')
+            p.innerHTML = ('Clique no botão abaixo para fazer o registro.')
 
-        fundo.style.transform = 'translate(0%, 1%)'
-        fundo.style.borderRadius = '0px 0px 20px 20px'
-        fundo.style.backgroundPosition = 'center left'
+        } else if (h1.innerHTML == ('Não possui uma conta?')) {
 
-        h1.innerHTML = ('Já tem uma conta?')
-        p.innerHTML = ('Clique no botão abaixo para fazer login.')
-    }
+            fundo.style.transform = 'translate(0%, 0%)'
+            fundo.style.borderRadius = '0px 0px 20px 20px'
+            fundo.style.backgroundPosition = 'center left'
+
+            h1.innerHTML = ('Já tem uma conta?')
+            p.innerHTML = ('Clique no botão abaixo para fazer login.')
+        }
+
+    } else if (window.matchMedia('(min-width: 510px)').matches) {
+
+        if (h1.innerHTML == ('Já tem uma conta?')) {
+
+            fundo.style.transform = 'translate(-51%, -50%)'
+            fundo.style.borderRadius = '20px 0px 0px 20px'
+            fundo.style.backgroundPosition = 'right center'
+
+            h1.innerHTML = ('Não possui uma conta?')
+            p.innerHTML = ('Clique no botão abaixo para fazer o registro.')
+
+        } else if (h1.innerHTML == ('Não possui uma conta?')) {
+
+            fundo.style.transform = 'translate(50%, -50%)'
+            fundo.style.borderRadius = '0px 20px 20px 0px'
+            fundo.style.backgroundPosition = 'center left'
+
+            h1.innerHTML = ('Já tem uma conta?')
+            p.innerHTML = ('Clique no botão abaixo para fazer login.')
+        }
+    }  
 }
 
 function Registrar() {
