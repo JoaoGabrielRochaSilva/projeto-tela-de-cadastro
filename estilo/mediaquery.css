@@ -11,13 +11,14 @@ main {
 }
 
 div.cadastro {
+    height: 100%;
     width: 50%;
 }
 
 div#imagem {
-    transform: translate(50%, -50%);
+    transform: translate(50.2%, -51%);
 
-    height: 262px;
+    height: 101%;
     width: 50%;
 
     border-radius: 0px 20px 20px 0px;

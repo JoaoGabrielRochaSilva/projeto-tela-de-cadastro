@@ -50,6 +50,7 @@ div.cadastro {
 
     margin-bottom: 15px;
 
+    width: 100%;
     height: 50%;
 }
 
@@ -65,7 +66,7 @@ div.cadastro > form > p > input {
     margin-bottom: 7px;
 
     border-radius: 10px;
-    border: none;
+    border: 2px solid #cc8975;
 
     background-image: linear-gradient(to right, rgba(227, 227, 227, 0.524), rgb(183, 183, 183));
 }
@@ -124,7 +125,7 @@ main > div#imagem {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 51%;
 
     background: white url(../imagem/fundo.jpg) no-repeat left center;
     background-size: cover;
@@ -175,6 +176,7 @@ main > div#imagem > input:hover {
 
     div#imagem {
         border-radius: 0px 0px 20px 20px;
+        width: 101%;
         height: 50%;
     }
 }
