@@ -10,8 +10,8 @@ function ir() {
 
             fundo.style.transform = 'translate(0%, -103%)'
             fundo.style.borderRadius = '20px 20px 0px 0px'
-            fundo.style.backgroundPosition = 'right center'
-
+            fundo.style.backgroundPosition = 'left center'
+            
             h1.innerHTML = ('Não possui uma conta?')
             p.innerHTML = ('Clique no botão abaixo para fazer o cadastro.')
 
@@ -19,7 +19,7 @@ function ir() {
 
             fundo.style.transform = 'translate(0%, 0%)'
             fundo.style.borderRadius = '0px 0px 20px 20px'
-            fundo.style.backgroundPosition = 'center left'
+            fundo.style.backgroundPosition = 'center right'
 
             h1.innerHTML = ('Já tem uma conta?')
             p.innerHTML = ('Clique no botão abaixo para fazer login.')
@@ -31,7 +31,7 @@ function ir() {
 
             fundo.style.transform = 'translate(-50.2%, -51%)'
             fundo.style.borderRadius = '20px 0px 0px 20px'
-            fundo.style.backgroundPosition = 'right center'
+            fundo.style.backgroundPosition = 'left center'
 
             h1.innerHTML = ('Não possui uma conta?')
             p.innerHTML = ('Clique no botão abaixo para fazer o cadastro.')
@@ -40,7 +40,7 @@ function ir() {
 
             fundo.style.transform = 'translate(50.2%, -51%)'
             fundo.style.borderRadius = '0px 20px 20px 0px'
-            fundo.style.backgroundPosition = 'center left'
+            fundo.style.backgroundPosition = 'center right'
 
             h1.innerHTML = ('Já tem uma conta?')
             p.innerHTML = ('Clique no botão abaixo para fazer login.')
@@ -54,7 +54,7 @@ var emailSalvo = ''
 var senhaCorreta = ''
 var emailCorreto = ''
 
-function Registrar() {
+function Cadastrar() {
     var nome = document.getElementById('nomeusuario')
     var email = document.getElementById('email')
     var senha = document.getElementById('senha')
@@ -116,10 +116,15 @@ function login() {
 
 function esqueceuSenha() {
     var verificaEmail = prompt('Digite o E-mail da sua conta:')
-    if (verificaEmail != emailCorreto) {
+    verificaEmail.split('')
+
+    if (verificaEmail.length == 0 || !verificaEmail.includes('@')) {
+        alert('E-mail inválido.')
+    } else if (verificaEmail != emailCorreto) {
         alert('E-mail não cadastrado.')
     } else {
         var senhaNova = ''
+
         for (senhaNova;senhaNova.length < 8 || senhaNova == senhaCorreta;) {
             senhaNova = prompt('Digite sua nova senha:')
     

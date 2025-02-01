@@ -62,13 +62,15 @@ div.cadastro > h1 {
 }
 
 div.cadastro > form > p > input {
-    padding: 5px;
-    margin-bottom: 7px;
+    padding: 5px 1rem;
+    margin-bottom: 12px;
 
     border-radius: 10px;
     border: 2px solid #cc8975;
 
-    background-image: linear-gradient(to right, rgba(227, 227, 227, 0.524), rgb(183, 183, 183));
+    outline: none;
+
+    background-color: white;
 }
 
 div.cadastro > form > input {
@@ -119,7 +121,36 @@ form > a:hover {
     font-weight: 500;
 }
 
+div.cadastro > form > p.grupo-nome {
+    position: relative;
+}
+
+div.cadastro > form > p > label {
+   position: absolute;
+   transform: translateY(-50%);
+    top: 35%;
+   left: 1em;
+
+   padding: 0px 5px;
+   pointer-events: none;
+
+   font-size: 0.9em;
+   transition: 0.3s;
+    
+}
+
+div.cadastro > form > p > input:focus ~ label,
+div.cadastro > form > p > input:valid ~ label {
+   top: 0%;
+   background-color: white;
+   font-size: 0.8rem;
+
+   border-left: 1px solid #cc8975;
+   border-right: 1px solid #cc8975;
+}
+
 main > div#imagem {
+    z-index: 1;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -127,10 +158,10 @@ main > div#imagem {
     position: absolute;
     top: 51%;
 
-    background: white url(../imagem/fundo.jpg) no-repeat left center;
+    background: white url(../imagem/fundo.jpg) no-repeat right center;
     background-size: cover;
 
-    color: rgba(255, 255, 255, 0.506);
+    color: rgba(255, 255, 255, 0.572);
 
     box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
 
@@ -146,6 +177,7 @@ main > div#imagem > h1 {
 }
 
 main > div#imagem > p {
+    text-align: center;
     margin-top: 10px;
     font-size: 1.1em;
     transition-duration: 0.8s;
@@ -158,7 +190,7 @@ main > div#imagem > input {
     width: 125px;
 
     color: white;
-    background-color: #276783;
+    background-color: #276783ae;
 
     border-radius: 15px;
     border: none;

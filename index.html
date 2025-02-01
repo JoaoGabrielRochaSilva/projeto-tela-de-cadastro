@@ -18,33 +18,33 @@
         </div>
         <div class="cadastro">
                 <h1>Cadastro.</h1>
-                <form action="" method="get">
-                    <p>
-                        <label for="nomeusuario"></label>
-                        <input type="text" name="usuario" id="nomeusuario" placeholder="Nome">
+                <form action="" method="get" autocomplete="on">
+                    <p class="grupo-nome">
+                        <input type="text" name="usuario" id="nomeusuario">
+                        <label for="nomeusuario">Nome</label>
                     </p>
-                    <p>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                    <p class="grupo-nome">
+                        <input type="email" name="email" id="email">
+                        <label for="email">E-mail</label>
                     </p>
-                    <p>
-                        <label for="senha"></label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <p class="grupo-nome">
+                        <input type="password" name="senha" id="senha" >
+                        <label for="senha">Senha</label>
                     </p>
-                    <input type="button" value="Cadastrar" onclick="Registrar()">
+                    <input type="button" value="Cadastrar" onclick="Cadastrar()">
                 </form>
             </div>
         </div>
         <div class="cadastro">
                 <h1>Login.</h1>
-                <form action="" method="get">
-                    <p>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="emaillogin" placeholder="Email">
+                <form action="" method="get" autocomplete="on">
+                    <p class="grupo-nome">
+                        <input type="email" name="email" id="emaillogin">
+                        <label for="email">E-mail</label>
                     </p>
-                    <p>
-                        <label for="senha"></label>
-                        <input type="password" name="senha" id="senhalogin" placeholder="Senha">
+                    <p class="grupo-nome">
+                        <input type="password" name="senha" id="senhalogin" >
+                        <label for="senha">Senha</label>
                     </p>
                     <a href="#" onclick="esqueceuSenha()">esqueceu a senha?</a>
                     <input type="button" value="Login" onclick="login()">
