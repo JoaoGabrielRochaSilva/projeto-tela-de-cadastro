@@ -79,6 +79,9 @@ function Cadastrar() {
             document.getElementById('nomeusuario').value = ''
             document.getElementById('email').value = ''
             document.getElementById('senha').value = ''
+            PerdeuFoco(0)
+            PerdeuFoco(1)
+            PerdeuFoco(2)
             ir()
         }
     }
@@ -96,6 +99,8 @@ function login() {
             alert('E-mail não cadastrado.\nFaça o cadastro para seguir.')
             emaillogin.value = ''
             senhalogin.value = ''
+            PerdeuFoco(3)
+            PerdeuFoco(4)
             ir()
         } else if (senhalogin.value != senhaCorreta) {
             alert('Senha incorreta.\nVerifique os dados.')
@@ -110,6 +115,8 @@ function login() {
 
             emaillogin.value = ''
             senhalogin.value = ''
+            PerdeuFoco(3)
+            PerdeuFoco(4)
         }
     }     
 }
@@ -143,4 +150,34 @@ function esqueceuSenha() {
             }
         }
     } 
+}
+
+//Animação do input
+function GanhouFoco(num) {
+    let input = document.getElementsByTagName('label')[num]
+
+    if (document.getElementsByTagName('input')[num].focus || document.getElementsByTagName('input')[num].value.length >= 1) {
+        input.style.top = '0%'
+        input.style.backgroundColor = 'white'
+        input.style.fontSize = '0.8rem'
+        input.style.borderLeft = '1px solid #cc8975'
+        input.style.borderRight = '1px solid #cc8975'
+    }
+}
+
+function PerdeuFoco(num) {
+    let input = document.getElementsByTagName('label')[num]
+    let inputanimação = document.getElementsByClassName('inputanimação')[num]
+
+    if (!GanhouFoco(num) && inputanimação.value.length == 0) {
+        input.style.top = '35%'
+        input.style.fontSize = '0.9em'
+        input.style.border = 'none'
+    } else {
+        input.style.top = '0%'
+        input.style.backgroundColor = 'white'
+        input.style.fontSize = '0.8rem'
+        input.style.borderLeft = '1px solid #cc8975'
+        input.style.borderRight = '1px solid #cc8975'
+    }
 }

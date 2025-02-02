@@ -139,16 +139,6 @@ div.cadastro > form > p > label {
     
 }
 
-div.cadastro > form > p > input:focus ~ label,
-div.cadastro > form > p > input:valid ~ label {
-   top: 0%;
-   background-color: white;
-   font-size: 0.8rem;
-
-   border-left: 1px solid #cc8975;
-   border-right: 1px solid #cc8975;
-}
-
 main > div#imagem {
     z-index: 1;
     display: flex;
@@ -190,10 +180,10 @@ main > div#imagem > input {
     width: 125px;
 
     color: white;
-    background-color: #276783ae;
+    background-color: #2767835d;
 
     border-radius: 15px;
-    border: none;
+    border: 2px solid #1d4d61;
 
     transition: 0.3s;
 }
@@ -201,7 +191,7 @@ main > div#imagem > input {
 main > div#imagem > input:hover {
     cursor: pointer;
     background-color: #1d4d61;
-    width: 135px;
+    width: 133px;
 }
 
 @media  screen and (width <= 509px) {

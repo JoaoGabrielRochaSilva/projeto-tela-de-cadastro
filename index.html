@@ -20,15 +20,15 @@
                 <h1>Cadastro.</h1>
                 <form action="" method="get" autocomplete="on">
                     <p class="grupo-nome">
-                        <input type="text" name="usuario" id="nomeusuario">
+                        <input type="text" name="usuario" id="nomeusuario" onfocus="GanhouFoco(0)" onblur="PerdeuFoco(0)" class="inputanimação">
                         <label for="nomeusuario">Nome</label>
                     </p>
                     <p class="grupo-nome">
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email"  onfocus="GanhouFoco(1)" onblur="PerdeuFoco(1)" class="inputanimação">
                         <label for="email">E-mail</label>
                     </p>
                     <p class="grupo-nome">
-                        <input type="password" name="senha" id="senha" >
+                        <input type="password" name="senha" id="senha"  onfocus="GanhouFoco(2)" onblur="PerdeuFoco(2)" class="inputanimação">
                         <label for="senha">Senha</label>
                     </p>
                     <input type="button" value="Cadastrar" onclick="Cadastrar()">
@@ -39,11 +39,11 @@
                 <h1>Login.</h1>
                 <form action="" method="get" autocomplete="on">
                     <p class="grupo-nome">
-                        <input type="email" name="email" id="emaillogin">
+                        <input type="email" name="email" id="emaillogin"  onfocus="GanhouFoco(3)" onblur="PerdeuFoco(3)" class="inputanimação">
                         <label for="email">E-mail</label>
                     </p>
                     <p class="grupo-nome">
-                        <input type="password" name="senha" id="senhalogin" >
+                        <input type="password" name="senha" id="senhalogin"  onfocus="GanhouFoco(4)" onblur="PerdeuFoco(4)" class="inputanimação">
                         <label for="senha">Senha</label>
                     </p>
                     <a href="#" onclick="esqueceuSenha()">esqueceu a senha?</a>
