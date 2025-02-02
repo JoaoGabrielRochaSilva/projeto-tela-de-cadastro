@@ -1,3 +1,43 @@
+//Verifica a largura da janela
+window.addEventListener('resize', LarguraJanela)
+function LarguraJanela() {
+    let fundo = document.getElementById('imagem')
+    let h1 = document.getElementsByClassName('texto')[0]
+
+    if (window.innerWidth <= 509) {
+
+        if (h1.innerHTML == ('Já tem uma conta?')) {
+
+            fundo.style.transform = 'translate(0%, 0%)'
+            fundo.style.borderRadius = '0px 0px 20px 20px'
+            fundo.style.backgroundPosition = 'center right'
+
+        } else if (h1.innerHTML == ('Não possui uma conta?')) {
+
+            fundo.style.transform = 'translate(0%, -103%)'
+            fundo.style.borderRadius = '20px 20px 0px 0px'
+            fundo.style.backgroundPosition = 'left center'
+            
+        }
+
+    } else if (window.innerWidth >= 510) {
+
+        if (h1.innerHTML == ('Já tem uma conta?')) {
+
+            fundo.style.transform = 'translate(50.2%, -51%)'
+            fundo.style.borderRadius = '0px 20px 20px 0px'
+            fundo.style.backgroundPosition = 'center right'
+
+        } else if (h1.innerHTML == ('Não possui uma conta?')) {
+
+            fundo.style.transform = 'translate(-50.2%, -51%)'
+            fundo.style.borderRadius = '20px 0px 0px 20px'
+            fundo.style.backgroundPosition = 'left center'
+
+        }
+    }
+}
+
 //Animação da imagem
 function ir() {
     let fundo = document.getElementById('imagem')
